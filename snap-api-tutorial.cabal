@@ -28,9 +28,8 @@ Executable snap-api-tutorial
     heist                     >= 0.14    && < 0.15,
     MonadCatchIO-transformers >= 0.2.1   && < 0.4,
     mtl                       >= 2       && < 3,
-    postgresql-simple         >= 0.4.9.0,
-    snaplet-postgresql-simple >= 0.6,
-    snap                      >= 0.13    && < 0.14,
+    slave-thread,
+    snap                      >= 0.13    && < 0.15,
     snap-core                 >= 0.9     && < 0.10,
     snap-server               >= 0.9     && < 0.10,
     snap-loader-static        >= 0.9     && < 0.10,
@@ -45,7 +44,7 @@ Executable snap-api-tutorial
   else
     build-depends:
       base                      >= 4.4      && < 5,
-      lens                      >= 3.7.6    && < 4.7
+      lens                      >= 3.7.6    && < 4.10
 
   if flag(development)
     build-depends:
